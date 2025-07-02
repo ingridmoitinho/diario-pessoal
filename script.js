@@ -88,3 +88,44 @@ document.addEventListener('DOMContentLoaded', () => {
         textInput.value = '';
     });
 });
+
+// Dark mode 
+document.addEventListener('DOMContentLoaded', () => {
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    // Pega o ícone dentro do botão
+    const themeIcon = darkModeToggle.querySelector('i');
+    const body = document.body;
+
+    const enableDarkMode = () => {
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+        // Troca a classe do ícone para sol
+        themeIcon.className = 'fa-solid fa-sun';
+    };
+
+    const disableDarkMode = () => {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+        // Troca a classe do ícone para lua
+        themeIcon.className = 'fa-solid fa-moon';
+    };
+
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (savedTheme === null && prefersDark)) {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            disableDarkMode();
+        } else {
+            enableDarkMode();
+        }
+    });
+
+});

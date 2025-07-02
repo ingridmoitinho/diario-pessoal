@@ -189,8 +189,8 @@ time {
 }
 
 .tag-amoroso {
-    background-color: #fce4ec; 
-    color: #d81b60;    
+    background-color: #fce4ec;
+    color: #d81b60;
 }
 
 .tag-amoroso::before {
@@ -247,3 +247,103 @@ time {
     font-size: 0.8rem;
 }
 
+/* Dark Mode */
+/* --- Fundo e Cores Gerais --- */
+body.dark-mode {
+    background-color: #121212;
+    color: #e1e1e1;
+}
+
+/* --- Header e Título --- */
+body.dark-mode header {
+    border-bottom-color: #333333;
+}
+
+body.dark-mode header h1 {
+    color: #f5a5e3;
+}
+
+body.dark-mode header .subtitle {
+    color: #a0a0a0;
+}
+
+body.dark-mode h2 {
+    color: #9ee4e6;
+    border-bottom-color: #333333;
+}
+/* --- Ícones --- */
+#darkModeToggle {   
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;   
+    color: #9ee4e6; 
+}
+
+body.dark-mode #darkModeToggle {
+    color: #b1a982; 
+}
+
+/* --- Entradas do Diário (Cards) --- */
+body.dark-mode .diary-entry {
+    background-color: #1e1e1e;
+    border-color: #333333;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .entry-header {
+    border-bottom-color: #333333;
+}
+
+body.dark-mode .entry-header h3 {
+    color: #d8bde2;
+}
+
+body.dark-mode .entry-header time {
+    color: #a0a0a0;
+}
+
+body.dark-mode .entry-content p {
+    color: #a0a0a0;
+}
+
+/* --- Formulário --- */
+body.dark-mode #new-entry-form {
+    background-color: #1e1e1e;
+    border-color: #333333;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode #new-entry-form input,
+body.dark-mode #new-entry-form textarea {
+    background-color: #2a2a2a;
+    color: #e1e1e1;
+    border-color: #444;
+}
+
+body.dark-mode #save-entry-btn {
+    background-color: #9ee4e6;
+    color: #121212;   
+}
+
+body.dark-mode #save-entry-btn:hover {
+    background-color: #f5a5e3;
+}
+
+/* --- Tags de Sentimento --- */
+body.dark-mode .tag-esperancoso {
+    background-color: #2a3b4a;
+    color: #a8c7ff;
+}
+
+body.dark-mode .tag-grato {
+    background-color: #4d3a29;
+    color: #ffc978;
+}
+
+body.dark-mode .tag-amoroso {
+    background-color: #5c1a33;
+    color: #ff9ebf;
+}
