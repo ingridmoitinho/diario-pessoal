@@ -1,0 +1,176 @@
+/* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    /* Fontes */
+    --font-primary: "EB Garamond", serif;
+    --font-secondary: "Amatic SC", sans-serif;
+
+    /* Cores Principais */
+    --color-pink: #f58ada;
+    --color-cyan: #82d2d4;
+    --color-text-muted: #9e9a9a;
+    --color-background-light: #f0f0f0;
+    --color-background-white: #ffffff;
+    --color-border-medium: #e0e0e0;
+    --color-box-shadow: rgba(0, 0, 0, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background-light);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 5rem;
+}
+
+h1 {
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    color: var(--color-pink);
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-muted);
+    margin-top: 5px;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-cyan);
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para as entradas do diário */
+#entries-section {
+    margin-top: 20px;
+}
+
+.diary-entry {
+    background-color: var(--color-background-white);
+    border: 1px solid var(--color-border-medium);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px var(--color-box-shadow);
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--color-background-light);
+    padding-bottom: 15px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(146, 99, 138);
+}
+
+time {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+}
+
+.entry-content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: var(--color-text-muted);
+    margin-bottom: 3rem;
+}
+
+.entry-footer {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+/* Estilos para as Tags de Sentimento */
+.tag {
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.tag::before {
+    content: '●';
+    margin-right: 8px;
+}
+
+/* Estilos para o formulário de nova entrada */
+#new-entry-form {
+    background-color: var(--color-background-white);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 40px;
+    border: 1px solid var(--color-border-medium);
+    box-shadow: 0 4px 12px var(--color-box-shadow);
+}
+
+#new-entry-form input,
+#new-entry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    font-family: var(--font-primary);
+}
+
+#save-entry-btn {
+    background-color: var(--color-cyan);
+    color: var(--color-background-white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#save-entry-btn:hover {
+    background-color: var(--color-pink);
+}
+
+.fa-bluesky {
+    color: var(--color-cyan);
+    font-size: 0.8rem;
+}
+
