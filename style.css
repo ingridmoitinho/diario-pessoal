@@ -133,6 +133,79 @@ time {
     margin-right: 8px;
 }
 
+/* Cores específicas por sentimento */
+.tag-esperancoso {
+    background-color: #e0eaff;
+    color: #0052cc;
+}
+
+.tag-esperancoso::before {
+    color: #0052cc;
+}
+
+.tag-desafiador {
+    background-color: #ffebe6;
+    color: #c82100;
+}
+
+.tag-desafiador::before {
+    color: #c82100;
+}
+
+.tag-reflexivo {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.tag-reflexivo::before {
+    color: #555;
+}
+
+.tag-grato {
+    background-color: #fff4e0;
+    color: #e67e22;
+}
+
+.tag-grato::before {
+    color: #e67e22;
+}
+
+.tag-inspirado {
+    background-color: #ede7f6;
+    color: #5e35b1;
+}
+
+.tag-inspirado::before {
+    color: #5e35b1;
+}
+
+.tag-confuso {
+    background-color: #eceff1;
+    color: #546e7a;
+}
+
+.tag-confuso::before {
+    color: #546e7a;
+}
+
+.tag-amoroso {
+    background-color: #fce4ec; 
+    color: #d81b60;    
+}
+
+.tag-amoroso::before {
+    color: #d81b60;
+}
+
+.tag-neutro {
+    background-color: #e3e3e3;
+    color: #333;
+}
+
+.tag-neutro::before {
+    color: #333;
+}
+
 /* Estilos para o formulário de nova entrada */
 #new-entry-form {
     background-color: var(--color-background-white);
